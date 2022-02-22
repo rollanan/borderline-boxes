@@ -1,0 +1,2135 @@
+<!-- borderline boxes theme-->
+<!DOCTYPE html>
+ 
+<html>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+{block:Hidden} 
+<meta name="image:background" content="https://static.tumblr.com/..."/>
+<meta name="if:show background" content=""/>
+<meta name="if:show custom links" content=""/>
+<meta name="if:show custom links title" content=""/>
+<meta name="if:show custom links 2" content=""/>
+<meta name="if:show custom links 2 title" content=""/>
+<meta name="if:show date" content=""/>
+<meta name="if:show search" content=""/>
+<meta name="if:show sidebar" content=""/>
+<meta name="if:show sidebar 2" content=""/>
+<meta name="if:show twitter timeline" content=""/>
+<meta name="text:embed your twitter timeline here" content=""/>
+   <meta name="text: custom links title" content=""/>
+   <meta name="text: custom links 2 title" content=""/>
+   
+   
+    <meta name="text:link 1" content=""/>
+ <meta name="text:link 1 url" content=""/>
+    <meta name="text:link 2" content=""/>
+ <meta name="text:link 2 url" content=""/>
+ <meta name="text:link 3" content=""/>
+ <meta name="text:link 3 url" content=""/>
+ <meta name="text:link 4" content=""/>
+ <meta name="text:link 4 url" content=""/>
+ <meta name="text:link 5" content=""/>
+ <meta name="text:link 5 url" content=""/>
+ <meta name="text:link 6" content=""/>
+ <meta name="text:link 6 url" content=""/>
+ <meta name="text:link 7" content=""/>
+ <meta name="text:link 7 url" content=""/>
+ <meta name="text:link 8" content=""/>
+ <meta name="text:link 8 url" content=""/>
+ <meta name="text:link 9" content=""/>
+ <meta name="text:link 9 url" content=""/>
+ <meta name="text:link 10" content=""/>
+ <meta name="text:link 10 url" content=""/>
+ 
+ 
+ <meta name="text:link 11" content=""/>
+ <meta name="text:link 11 url" content=""/>
+    <meta name="text:link 12" content=""/>
+ <meta name="text:link 12 url" content=""/>
+ <meta name="text:link 13" content=""/>
+ <meta name="text:link 13 url" content=""/>
+ <meta name="text:link 14" content=""/>
+ <meta name="text:link 14 url" content=""/>
+ <meta name="text:link 15" content=""/>
+ <meta name="text:link 15 url" content=""/>
+ <meta name="text:link 16" content=""/>
+ <meta name="text:link 16 url" content=""/>
+ <meta name="text:link 17" content=""/>
+ <meta name="text:link 17 url" content=""/>
+ <meta name="text:link 18" content=""/>
+ <meta name="text:link 18 url" content=""/>
+ <meta name="text:link 19" content=""/>
+ <meta name="text:link 19 url" content=""/>
+ <meta name="text:link 20" content=""/>
+ <meta name="text:link 20 url" content=""/>
+ 
+ 
+ 
+
+
+ 
+ 
+ <meta name="text:Google analytics ID" content="">
+ {/block:Hidden}
+ 
+ 
+
+ 
+ 
+ 
+
+    <style>
+
+
+       /*page display config*/
+       {block:AskPage} 
+       
+       .radioactivedating , .buttonlink , .reblogdiv ,.notediv
+            {
+       display: none;
+       }
+       
+       
+       {/block:AskPage}
+             {block:SubmitPage}  
+       
+       .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+       display: none;
+       }
+       
+       
+       {/block:SubmitPage} 
+       
+
+    
+    {block:Pages} 
+    
+          .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+
+       }
+    {/block:Pages}
+    
+    
+    
+     {block:HomePage} 
+       .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+       display: block;
+       }
+     
+     
+     {/block:HomePage}
+     
+      {block:TagPage} 
+     
+      .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+       display: block;
+       }
+     
+     
+     
+     {/block:TagPage}  
+   
+  
+     
+     {block:IndexPage}
+        
+       
+       .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+       display: block;
+       }
+
+ {/block:IndexPage}
+     
+
+     
+     
+      {block:Date} 
+       .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+       display: block ;
+       }
+     
+   {/block:Date}
+     
+     
+    {block:SearchPage}
+       .radioactivedating , .buttonlink, .reblogdiv ,.notediv
+            {
+       display: block ;
+       }
+     
+   {/block:SearchPage}
+     
+     
+     /*end of page display config*/
+     
+     
+     html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+     
+     
+      /*background stuff*/ 
+       
+
+
+body {
+  background: {BackgroundColor} ;
+  
+ 
+  
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+
+    {block:Ifshowbackground}
+    background-image: url({image:background});
+    {/block:Ifshowbackground}
+    
+ animation: fadein 2s;
+       
+       margin:8;
+       
+       
+   } 
+    
+    
+    
+    @keyframes fadein {
+    
+    
+    
+    
+    
+    
+    from { opacity: 0;  }
+    
+50% { opacity: 0;  }
+    to   { opacity: 1; }
+}
+
+
+
+
+       
+       
+       
+       
+       a{
+           color:{AccentColor};
+           
+       }
+       
+         
+      
+                         hr.rounded {
+  border-top: medium solid {AccentColor};
+width: 150px;
+color:{AccentColor};
+box-sizing:border-box;
+}         
+
+#page  {
+    
+ font-family:         "Courier"        ;
+
+word-break: break-word; 
+     font-size: medium;
+margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+   @media (orientation: portrait) {
+
+      #page {
+      
+      font-size: large;
+          
+       }    }  
+
+
+
+
+
+
+  
+ .container {
+      
+display: flex;
+
+flex-direction: row;
+
+justify-content: center;
+
+ 
+  }       
+  
+  
+  
+  
+   @media (orientation: portrait) {
+
+      .container {
+      
+          margin: 0 auto;
+          flex-direction: column;
+          
+       }    }  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+                       .sidebar2
+                     {
+                     
+
+  width: 300px;
+                     
+
+display: flex;
+
+flex-direction: column;
+max-width: 300px;
+
+margin-right: 40px;
+  
+    
+   
+                     
+                     
+                     }
+                     
+                     
+                     
+                 @media (orientation: portrait) {
+
+      .sidebar2 {
+          
+          margin:0 auto;
+     width:90%;
+          
+       }    }  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                         .sidebar
+                     {
+                     
+
+  width: 300px;
+                     
+
+display: flex;
+
+flex-direction: column;
+max-width: 300px;
+
+margin-left: 40px;
+  
+    
+   
+                     
+                     
+                     }
+                     
+                     
+                     
+                 @media (orientation: portrait) {
+
+      .sidebar {
+          
+          margin:0 auto;
+          
+          display: none;
+       }    }  
+  
+
+
+  .borderlink
+
+
+
+
+{
+
+font-weight: bold;
+padding: 5px;
+
+text-decoration: none;
+ text-align: center;
+ border-style:solid;
+ border-width: medium;
+ border-color:{AccentColor};
+ background:#fff;
+   transform: scale(0.9);
+    transition: transform 0.1s;
+
+}
+
+
+.borderlink:hover
+
+
+
+{
+
+ transform: scale(1.1);
+
+     z-index: 10;
+    
+}
+  
+  
+  
+  
+  
+  .main {
+   
+   
+   width:500px;
+   
+   
+      justify-content: center;
+      
+  }
+  
+  
+  
+@media (orientation: portrait) {
+
+  .main {
+
+width: 100%;
+
+margin: 0 auto;
+
+     
+  }
+  
+  
+}
+  
+  
+  
+  
+  
+  
+/*if you are reading this, go drink water now*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .tumblr_video_container  , .tumblr_video_iframe 
+
+{
+position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+height: 100%;
+}   
+  .tmblr-full
+{
+
+
+ display:flex;  
+   
+}    
+img{width:100%;height:auto;};
+.tumblr_blog {
+
+
+    
+}
+    blockquote {
+
+overflow: hidden;
+
+margin: 0px 0px 0px 0px ;
+
+
+display:block;
+
+
+width:100%  ;
+border-bottom:solid;
+
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff; 
+
+
+ }
+
+
+  
+  
+  #ask_form , #submit_form
+  {
+      padding-top:10px;
+      padding-bottom:10px;
+height: 388px;
+
+}
+  
+ 
+ 
+ @media (orientation: portrait) {
+
+  #submit_form {
+height: 445px;
+
+     
+  }
+  
+  
+}
+ 
+
+  
+    .buttonlink {
+      
+        padding: 10px;
+transform:0.9%;
+        transition: transform 0.1s;
+        display: inline;
+    }
+  .buttonlink:hover {
+      transform:1.1%;
+      
+  } 
+  
+  
+  
+  .buttonhover {
+transform: scale(0.9);
+    transition: transform 0.1s;
+
+}
+.buttonhover:hover
+{
+    transform: scale(1.1);
+    
+}
+
+  
+
+     .notediv
+       {
+margin-top:20px;
+           position: relative;
+          float: right;
+     transform: scale(0.9);
+    transition: transform 0.1s;
+     
+       }
+  
+     .notediv:hover
+       {
+
+           position: relative;
+          float: right;
+          transform: scale(1.1);
+       }
+ 
+  .reblogdiv
+       {
+margin-top:20px;
+           position: relative;
+          float: left;
+     transform: scale(0.9);
+    transition: transform 0.1s;
+     
+       }
+  
+     .reblogdiv:hover
+       {
+
+           position: relative;
+          float: left;
+          transform: scale(1.1);
+       }
+ 
+ 
+ 
+ .audio_player_iframe  , .tumblr_audio_player    {
+
+
+width: 100%;
+ 
+height: 85px;
+     
+     
+ }
+ .spotify_audio_player , .soundcloud_audio_player
+ {
+
+
+width: 100%;
+
+
+ }
+ 
+ 
+.more_notes_link_container {
+     
+     text-transform: lowercase;
+     
+     
+     
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  {CustomCSS}
+   </style>
+
+
+
+
+<head>
+
+<title>{Title}</title>
+  <link rel="icon" type="image/x-icon" href={Favicon}>
+       
+       <link rel="alternate" type="application/rss+xml" href="{RSS}">
+       
+       {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+                    {block:IfGoogleAnalyticsID}
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              ga('create', '{text:Google Analytics ID}', 'auto');
+              ga('send', 'pageview');
+            </script>
+        {/block:IfGoogleAnalyticsID}
+     </head>
+            
+            <body>
+
+        
+        <section id="page">  
+            
+            
+            
+ 
+ 
+                
+                
+                
+                
+                <div class="container">
+                    
+
+                    <!--start of actual sidebar2-->
+                    
+                    
+                    
+                    
+                    <div class="sidebar2">
+         {block:Ifshowsidebar}               
+                        
+                 <style>
+                     
+
+                     
+                     
+                     
+                     
+                     
+                 </style>       
+                        
+<!--divider code-->
+                       <hr class="rounded"> 
+
+                        <!--end of divider code-->
+                  
+                   <!--start of icon code-->
+                      
+                      {block:ShowAvatar} 
+                      
+              
+                       <a class="iconimage" href={BlogURL}> 
+   
+         <img     class="iconimage"  src="  {PortraitURL-128}   " >
+        </a>
+
+         <style>
+             
+             .iconcode
+             
+             
+             {
+                 
+   
+             }
+             
+
+.iconimage           {
+    
+    
+    
+    display: inline-block;
+width: 128px;
+margin: 0 auto;
+    height: 128px;
+}
+.iconcode
+
+{
+text-align: center
+}
+   
+             
+             
+         </style>
+         
+         
+         
+ 
+         
+         {/block:ShowAvatar}
+  
+         
+         
+         <!--end of icon code-->
+         
+         <!--start of blog title-->               
+                 {block:ShowTitle} 
+               
+       
+               
+   <a href="{BlogURL}" class="titletext">{Title}</a>
+               
+
+               
+               
+               <!--end of blog title-->
+               
+               
+               
+               
+               
+               {/block:ShowTitle} 
+               
+             
+             
+                <!--these are the link codes -->
+
+
+<style>
+    
+    .titletext
+    {
+
+font-weight: bold;
+padding: 5px;
+
+text-decoration: none;
+ text-align: center;
+     border-style:hidden;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+    
+
+
+        
+    }
+    
+
+</style>
+
+
+
+{block:Ifshowsearch}
+
+<hr class="rounded">
+<div  class="titletext" >
+
+
+
+
+<form class="inputtexy"  action="/search" method="get">
+  
+   
+    <input  class="inputtexy2"    type="text" name="q" value="{SearchQuery}"/>
+    <input  class="  inputtexy3   "   type="submit" value="search"/>
+    
+  
+    
+</form>
+
+</div>
+
+
+
+{/block:Ifshowsearch}
+
+
+
+<style>
+    .inputtexy {
+        
+margin-bottom:0;
+ display:flex;
+   
+    }
+    
+       .inputtexy2 {
+        width: 100%;
+
+ 
+   border: thin solid {AccentColor};
+  
+   font-family: 'Courier new'  ;
+
+           
+           
+       }
+    
+    .inputtexy2:focus {
+        width: 100%;
+
+ 
+   border: thin solid {AccentColor};
+   outline: none;
+
+    }
+    
+    
+    
+    .inputtexy3 
+   
+   
+   
+   
+    
+
+
+
+
+{
+
+font-weight: bold;
+padding: 5px;
+color:{AccentColor};
+text-decoration: none;
+ text-align: center;
+ border-style:solid;
+ border-width: medium;
+ border-color:{AccentColor};
+ background:#fff;
+   transform: scale(0.9);
+    transition: transform 0.1s;
+font-family: 'Courier new'  ;
+
+}
+
+
+.inputtexy3:hover
+
+
+
+{
+
+ transform: scale(1.1);
+
+     z-index: 10;
+    
+}
+   
+   
+        
+        
+    }
+    
+    
+</style>
+
+
+
+
+
+
+
+{block:Ifshowcustomlinks}
+  
+  {block:Ifshowcustomlinkstitle}
+<hr class="rounded"> 
+<a class="titletext">{text: custom links title}</a>
+  {/block:Ifshowcustomlinkstitle}
+   {block:HasPages}
+                            
+                             <hr class="rounded"> 
+                                {block:Pages}
+                       
+                                    <a href="{URL}" class="borderlink ">{Label}</a>
+                         
+                                {/block:Pages}
+                        
+  
+    
+      {/block:HasPages}
+       {/block:Ifshowcustomlinks}
+             
+    {block:Ifshowcustomlinks2}                  
+
+{/block:Ifshowcustomlinks}
+             
+             {block:Ifcustomlinks2title}
+                        
+                 {block:Ifshowcustomlinks2title}       
+          <hr class="rounded">
+           <a class="titletext">{text: custom links 2 title}</a>
+           
+          
+           {/block:Ifshowcustomlinks2title}
+            {/block:Ifcustomlinks2title}
+           
+<hr class="rounded">
+{block:Iflink1}
+
+        <a href="{text:link 1 url}"class="borderlink">{text:link 1}</a>
+    {/block:Iflink1}
+       {block:Iflink2}
+       <a href="{text:link 2 url}"class="borderlink">{text:link 2}</a>
+       {/block:Iflink2}
+      
+      {block:Iflink3}
+       <a href="{text:link 3 url}"class="borderlink">{text:link 3}</a>
+       {/block:Iflink3}
+       
+       {block:Iflink4}
+       <a href="{text:link 4 url}"class="borderlink">{text:link 4}</a>
+       {/block:Iflink4}
+       
+       {block:Iflink5}
+       <a href="{text:link 5 url}"class="borderlink">{text:link 5}</a>
+       {/block:Iflink5}
+       
+       {block:Iflink6}
+       <a href="{text:link 6 url}"class="borderlink">{text:link 6}</a>
+       {/block:Iflink6}
+       
+       {block:Iflink7}
+       <a href="{text:link 7 url}"class="borderlink">{text:link 7}</a>
+       {/block:Iflink7}
+       
+       {block:Iflink8}
+       <a href="{text:link 8 url}"class="borderlink">{text:link 8}</a>
+       {/block:Iflink8}
+       
+       {block:Iflink9}
+       <a href="{text:link 9 url}"class="borderlink">{text:link 9}</a>
+       {/block:Iflink9}
+       
+       {block:Iflink10}
+       <a href="{text:link 10 url}"class="borderlink">{text:link 10}</a>
+       {/block:Iflink10} 
+        
+        {block:Iflink11}
+       <a href="{text:link 11 url}"class="borderlink">{text:link 11}</a>
+       {/block:Iflink11} 
+       
+       {block:Iflink12}
+       <a href="{text:link 12 url}"class="borderlink">{text:link 12}</a>
+       {/block:Iflink12} 
+       
+       {block:Iflink13}
+       <a href="{text:link 13 url}"class="borderlink">{text:link 13}</a>
+       {/block:Iflink13} 
+       
+       {block:Iflink14}
+       <a href="{text:link 14 url}"class="borderlink">{text:link 14}</a>
+       {/block:Iflink14} 
+       
+       {block:Iflink15}
+       <a href="{text:link 15 url}"class="borderlink">{text:link 15}</a>
+       {/block:Iflink15} 
+       
+       {block:Iflink16}
+       <a href="{text:link 16 url}"class="borderlink">{text:link 16}</a>
+       {/block:Iflink16} 
+       
+       {block:Iflink17}
+       <a href="{text:link 17 url}"class="borderlink">{text:link 17}</a>
+       {/block:Iflink17} 
+       
+       {block:Iflink18}
+       <a href="{text:link 18 url}"class="borderlink">{text:link 18}</a>
+       {/block:Iflink18} 
+       
+       {block:Iflink19}
+       <a href="{text:link 19 url}"class="borderlink">{text:link 19}</a>
+       {/block:Iflink19} 
+       
+       {block:Iflink20}
+       <a href="{text:link 20 url}"class="borderlink">{text:link 20}</a>
+       {/block:Iflink20} 
+       
+       
+        
+        
+                
+              
+    {/block:Ifshowcustomlinks2} 
+                         <!-- end of link codes-->  
+                        
+ {block:ShowDescription} 
+                  
+ <hr class="rounded">
+
+       
+         
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                   <!--description code-->
+                
+                <div class="desccode">
+                              
+  
+         {Description}     
+
+    
+    
+                </div>
+                
+                <style>
+                    
+                    
+                  .desccode  
+                    
+                  {
+
+padding: 5px;
+ text-align: center;
+     border-style:hidden;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+    color:{AccentColor};
+
+    
+        
+        
+    }   
+                    
+
+                    
+                </style>
+                   
+    {/block:ShowDescription}
+                  
+                  <!--end of description code-->     
+                   
+                   
+                    
+                    
+                    
+  {/block:Ifshowsidebar}  
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                    <!--end of sidebar2-->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <!--these are the posts codes-->
+                    
+                    <div class="main     ">
+                       
+                     
+                       
+                       
+                       
+       
+                       
+
+                       
+                       
+                       
+                       <!-- main -->
+   
+
+<style> .postcontent { 
+
+
+
+margin-top: 50px;
+margin-bottom:50px;
+ display: flex;
+   flex-direction: column;
+
+   position: relative;
+
+
+max-width: 500px;
+padding: 10px;
+
+
+ border-style:solid;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+
+ z-index 0.1s;
+
+
+}    
+    
+   
+   
+   
+    @media (orientation: portrait) {
+  .postcontent{
+  
+    display: flex;
+   flex-direction: column;
+  
+  width:90% ;
+margin:50px auto;
+  max-width: 500px;
+
+
+  }
+ }
+   
+   
+
+
+    
+
+    
+
+    
+    
+</style>
+
+<!--divider code-->
+                       <hr class="rounded"> 
+
+                        <!--end of divider code-->
+
+<a href="https://www.tumblr.com/theme/41194"   class="credittext ">theme by rollanan</a>
+ 
+      
+            <style>
+          .credittext
+          {  
+display : block;
+width: 300px;
+margin: 0 auto;
+          font-weight: bold;
+padding: 5px 0;
+
+text-decoration: none;
+ text-align: center;
+     border-style:hidden;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+
+          
+              }
+@media (orientation: portrait) {
+
+      .credittext {
+          
+          max-width: 300px;
+     width:90%;
+          
+       }    }
+      </style>
+      
+
+       
+       
+       
+       
+       
+       
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        {block:Posts}
+
+
+
+<div class="  postcontent   ">
+  {block:Date}
+
+
+
+{block:Ifshowdate}
+
+<div     class="radioactivedating , buttonhover ">
+   <a  class="   buttonlink ,   borderlink   "      href="  {Permalink}  ">  {Month} {Year}   </a>
+</div>
+
+
+{/block:Ifshowdate}
+{/block:Date}
+
+<style> .radioactivedating {
+  margin: 0 auto;
+   margin-bottom: 20px;
+  text-transform: lowercase;
+    text-align: center;
+width: fit-content;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<div class="  isthiswhatyoucallawrapper   ">
+<style>
+.isthiswhatyoucallawrapper    {
+overflow: hidden; 
+  
+  
+  
+
+
+    
+    
+    
+}
+
+    
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+{block:Title}<div class="titlecenter">{Title}</div>
+<style>
+    .titlecenter{
+        
+        text-align:center;
+        
+    }
+    
+</style>
+
+
+
+{/block:Title}
+<!--
+{block:Text}{Body}{/block:Text}
+-->
+
+
+
+
+{block:Photo}
+      
+      <div     >
+       <img class="imagee" src="{PhotoURL-HighRes}" alt="{PhotoAlt}"> 
+
+
+</div>
+
+
+
+{/block:Photo}
+
+ 
+ 
+ <style>
+    .imagee {
+        
+        width: 100%;
+         
+    }
+    
+    
+</style>
+ 
+
+
+
+
+
+{block:Photoset}
+{block:Photos}
+<div     >
+       <img class="imagee" src={PhotoURL-HighRes}> 
+
+
+</div>
+{/block:Photos}
+{/block:Photoset}
+ 
+
+    
+    
+
+ 
+ 
+
+
+
+{block:Quote}
+{Quote}
+<div   align="right">
+{block:Source}-{Source}<p>{/block:Source}
+</div>
+{/block:Quote}
+ 
+
+
+
+
+
+
+{block:Video}
+
+<div class= " pleasecontainthething" >
+
+{VideoEmbed-700}
+</div>
+
+{/block:Video}
+
+
+
+
+<style>
+    .pleasecontainthething
+{
+ position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+
+}
+    
+</style>
+
+
+
+
+
+
+{block:Link}
+<a href="{URL}" class="linkcontainer" {Target}>
+<span style="display:block;text-align:center;">{Name}</span>
+{block:Thumbnail}<img class="imagee" src="{Thumbnail-HighRes}">{/block:Thumbnail}
+{block:Excerpt}<span style="color:#000;display:block;margin-top:10px;padding-bottom:10px;border-bottom:solid thin {AccentColor};margin-bottom:10px">{Excerpt}</span>{/block:Excerpt}
+{block:Host}<span style="display:block;text-align:right;">{Host}</span>{/block:Host}
+</a>
+{block:Description}{Description}{/block:Description}
+{/block:Link}
+ <style>
+     .linkcontainer{
+         padding:10px;
+         border:solid thin {AccentColor};
+         display:block;
+         text-decoration:underline;
+     }
+ </style>
+
+
+
+
+
+{block:Chat}
+{block:Lines}
+{block:Label}
+<br>{Label}
+{/block:Label}
+&nbsp;{Line}
+{/block:Lines}
+
+
+
+
+ <!--divider code-->
+                       <hr class="rounded2"> 
+                        
+                        
+                        <style>
+            
+                            hr.rounded2 {
+  border-style: none;
+
+}
+
+                        </style>
+           
+                        <!--end of divider code-->            
+
+
+
+
+
+{/block:Chat}
+ 
+
+
+
+
+
+
+{block:Audio}
+<div    class="audiospacer"     >
+
+
+{AudioEmbed-250}
+
+
+
+ <!--
+{block:TrackName}
+{TrackName}
+{/block:TrackName}  
+
+<br>
+{block:Artist}
+{Artist}
+{/block:Artist}
+ </div> -->
+    
+</div>
+
+{/block:Audio}
+
+
+
+
+<style>
+    .audiospacer {
+      
+
+        position: relative;
+  overflow: hidden;
+  width: 100%;
+
+    }
+    
+    
+
+  
+  
+
+
+</style>
+
+
+
+
+
+
+
+{block:Answer}
+
+<div class="cappy , questionspacer" ><div style="text-align: center;">
+{Asker} asked: <p></div>
+{Question}
+
+
+</div>
+<style>
+.questionspacer {
+    padding-bottom: 5px;
+    text-transform: lowercase;
+}
+    
+</style>
+
+{/block:Answer}
+
+
+
+
+
+
+
+
+
+<!-- proper caption codes-->
+
+
+
+
+
+<div class="cappy" >{Caption}  {Body}   {Replies}
+
+<style>
+    .cappy  {
+
+     border-bottom:solid;
+ border-width: medium;
+ border-color:{AccentColor};
+    
+     margin-bottom: 10px;
+ background:#fff; 
+
+    
+    
+    }    .cappy img  {
+
+     width: 100% ;
+height: auto;
+
+    }
+
+
+    
+    
+</style>
+
+</div>
+
+
+
+<!-- end of caption code-->
+
+
+
+
+
+
+{block:PermalinkPage}
+
+
+{/block:PermalinkPage}
+
+
+
+{block:PinnedPostLabel} 
+<div class="pinnedlabel">
+{PinnedPostLabel} 
+</div>
+
+<style>
+    .pinnedlabel
+    {
+        
+      text-decoration: none;
+text-align: right;  
+         text-transform: lowercase;
+
+  color:{AccentColor};
+    
+           font-weight: bold;
+        
+        margin-bottom: 5px;
+    }
+    
+</style>
+{/block:PinnedPostLabel}
+
+
+
+{block:Submission} 
+
+<div class="sumit" >
+
+submitted by 
+
+<a   href="{SubmitterURL}">{Submitter}</a>
+
+
+
+
+
+<style>
+.sumit    {
+   text-align: right; 
+   margin-bottom: 5px;
+    }
+</style>
+</div>
+
+
+{/block:Submission}
+
+
+
+
+ {block:HasTags}
+
+              
+              
+                <!--these are the tag text-->
+                
+                  <div class=" tagtext">    
+                      
+                        {block:Tags}
+                       
+                                <a class=" tagtext " href="{TagURL}">#{Tag}<br></a>
+                     
+                        {/block:Tags}
+              </div>
+             
+                {/block:HasTags}
+   
+   <style>
+       .tagtext
+       
+       
+       {
+           
+
+
+text-decoration: none;
+text-align: right;
+     border-style:hidden;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+           
+           
+           
+       }
+       
+
+   </style>
+</div>   <!--end inner wrapper-->
+   
+
+  
+  {block:Date}
+    <!--start  of controls-->
+     <div>
+    
+    
+
+ 
+  <!--reblog button-->
+{block:HomePage} 
+<div class="reblogdiv">
+<a class="    borderlink  ,   buttonlink" href="{ReblogURL}"  >reblog</a>
+
+</div>
+
+  
+    
+    <!-- these are the notes code counter-->
+  
+        
+        <div class="        notediv   ">
+        <a  class="borderlink , buttonlink  "   href="   {Permalink}   "  >  {NoteCountWithLabel}  </a>
+        
+        </div>
+        
+{/block:HomePage}
+
+
+   
+   
+   {block:PermalinkPage} 
+<div class="reblogdiv">
+<a class="borderlink  , buttonlink " href="{ReblogURL}"  >reblog</a>
+</div>
+
+
+    
+  
+    
+    <!-- these are the notes code counter-->
+  
+        
+        <div class="        notediv     ">
+        <a  class="borderlink , buttonlink  "   href="   {Permalink}   "  >  {NoteCountWithLabel}  </a>
+        
+        </div>
+        
+{/block:PermalinkPage}
+   
+   {block:TagPage} 
+   
+   <div class="reblogdiv">
+<a class="borderlink  , buttonlink " href="{ReblogURL}"  >reblog</a>
+</div>
+
+
+    
+  
+    
+    <!-- these are the notes code counter-->
+  
+        
+        <div class="        notediv     ">
+        <a  class="borderlink , buttonlink  "   href="   {Permalink}   "  >  {NoteCountWithLabel}  </a>
+        
+        </div>
+   
+   
+   {/block:TagPage}
+   
+     
+   {block:SearchPage}
+   <div class="reblogdiv">
+<a class="borderlink  , buttonlink " href="{ReblogURL}"  >reblog</a>
+</div>
+
+
+    
+  
+    
+    <!-- these are the notes code counter-->
+  
+        
+        <div class="        notediv     ">
+        <a  class="borderlink , buttonlink  "   href="   {Permalink}   "  >  {NoteCountWithLabel}  </a>
+        
+        </div>
+   
+   
+{/block:SearchPage}
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     <!-- end of note code counter-->
+    
+    
+
+     
+
+
+
+     
+     
+
+     
+ </div>
+
+
+<!--end of controls-->   
+    
+    
+    
+  {/block:Date}
+</div>
+
+{/block:Posts}
+ 
+ 
+ 
+ 
+ <!-- this is the note window-->
+{block:PostNotes}
+
+ <div class= "  postcontent  ,notescontent   ">
+<div class= "notewrapper">
+{PostNotes}
+</div>
+<style>
+    .notewrapper {
+        
+display: block;
+        
+    }
+    
+
+
+    
+    
+    ol.notes {
+
+                list-style-type: none;
+
+display: inline;
+margin: 0 auto;
+            }
+    
+    
+     ol.notes li.note {
+             
+               
+                border-top: solid medium {AccentColor};
+            padding: 5px;
+            }
+    ol.notes li.note img.avatar {
+                display: none;
+                
+            }
+
+    
+    
+    
+    
+    
+    
+    
+</style>
+
+    
+</div>
+
+{/block:PostNotes}
+                       
+                       
+                       
+                       
+
+                       
+                       
+                       
+                        <!-- end of posts code-->               
+                                       
+                                       
+                                       
+                    
+                      
+
+                       
+                       
+                       
+                        <!--these are the previous button codes-->
+                        
+                        
+                        
+                        
+                        
+
+                   
+                   
+                     {block:PreviousPage}
+                   
+                   <div  class="nextdiv" >
+                        
+
+                <a class="nextlink" href="{PreviousPage}"><==</a>
+        
+
+                        
+                    </div>
+                    
+                    
+            {/block:PreviousPage}
+                   
+
+                    <!--end of previous button codes-->
+                   
+                     
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   <!--these are the next button codes-->
+                  
+                    {block:NextPage}
+                  
+                    <div  class="nextdiv" >
+
+                        <style>
+
+                        </style>
+                        
+
+                <a class="nextlink" href="{NextPage}">==></a>
+           
+
+  
+
+                    </div>
+                   
+                   
+                   
+{/block:NextPage} 
+                   
+         <style>
+      
+
+  .nextlink
+
+    
+     {
+    padding:5px;
+
+  position: relative;
+
+
+margin: auto;
+
+   max-width: 300px;
+   width:90%;
+
+   font-weight: bold;
+
+text-transform: lowercase;
+text-decoration: none;
+ text-align: center;
+ border-style:solid;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+  display: block;
+
+   transform: scale(0.9);
+    transition: transform 0.1s;
+   
+  z-index: 413;
+  
+     }
+  
+
+.nextlink:hover
+
+{
+
+text-decoration: none;
+ text-align: center:
+ border-style:solid;
+ border-width: medium;
+ border-color:{AccentColor};
+
+ background:#fff;
+ transform: scale(1.1);
+
+     z-index: 413;
+    
+} 
+      
+
+  </style>          
+                   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+
+                   <!--end of next button codes-->
+                   
+                   
+                   
+
+           <!--divider code-->
+                       <hr class="rounded"> 
+
+                        <!--end of divider code-->        
+            
+                   
+                        
+                        
+                    </div> <!-- .main -->
+                 
+                  
+               
+               
+               
+                   <!--end of posts code-->
+                   
+                   
+                   
+
+                    <div class="sidebar">
+             {block:Ifshowsidebar2}       
+
+                   <!-- this are the box codes or sidebar codes --> 
+                   
+<!--divider code-->
+                       <hr class="rounded"> 
+
+                        <!--end of divider code-->
+
+{block:ShowHeaderImage} 
+
+<!--header code-->
+    
+               <img src="      {HeaderImage}    " >
+                 
+                   
+ <!--end of header code-->                  
+                   
+   
+                   
+                   {/block:ShowHeaderImage}
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+
+                   
+                   
+                   
+                   
+                   
+                    <!-- this is the twitter code -->
+                    {block:Ifshowtwittertimeline}
+                    {text:embed your twitter timeline here}
+                   
+                    {/block:Ifshowtwittertimeline}
+                    <!-- end of twitter code -->
+                    
+                    
+              
+                    
+                   
+                    
+                    
+                    
+                    
+                    <!-- end of box code -->
+                    
+  
+  
+
+  
+                    {/block:Ifshowsidebar2}
+                    
+                    </div> <!-- .sidebar -->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div> <!-- .container -->
+            
+                
+                 
+            </section>        
+
+
+
+
+ 
+    </body>
+   
+    
+</html>

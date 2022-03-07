@@ -6,6 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 {block:Hidden} 
 <meta name="image:background" content="https://static.tumblr.com/..."/>
+<meta name="if:links before description" content=""/>
 <meta name="if:show background" content=""/>
 <meta name="if:show custom links" content=""/>
 <meta name="if:show custom links title" content=""/>
@@ -892,7 +893,7 @@ font-family: 'Courier'  ;
 
 
 
-
+{block:Iflinksbeforedescription}
 {block:Ifshowcustomlinks}
   
   {block:Ifshowcustomlinkstitle}
@@ -1014,6 +1015,7 @@ font-family: 'Courier'  ;
                 
               
     {/block:Ifshowcustomlinks2} 
+    {/block:Iflinksbeforedescription}
                          <!-- end of link codes-->  
                         
  {block:ShowDescription} 
@@ -1069,9 +1071,130 @@ padding: 5px;
     {/block:ShowDescription}
                   
                   <!--end of description code-->     
-                   
-                   
-                    
+                   {block:Ifnotlinksbeforedescription}
+                   {block:Ifshowcustomlinks}
+  
+  {block:Ifshowcustomlinkstitle}
+<hr class="rounded"> 
+<a class="titletext">{text: custom links title}</a>
+  {/block:Ifshowcustomlinkstitle}
+   {block:HasPages}
+                            
+                             <hr class="rounded"> 
+                                {block:Pages}
+                       
+                                    <a href="{URL}" class="borderlink ">{Label}</a>
+                         
+                                {/block:Pages}
+                        
+  
+    
+      {/block:HasPages}
+       {/block:Ifshowcustomlinks}
+             
+    {block:Ifshowcustomlinks2}                  
+
+{/block:Ifshowcustomlinks}
+             
+             {block:Ifcustomlinks2title}
+                        
+                 {block:Ifshowcustomlinks2title}       
+          <hr class="rounded">
+           <a class="titletext">{text: custom links 2 title}</a>
+           
+          
+           {/block:Ifshowcustomlinks2title}
+            {/block:Ifcustomlinks2title}
+           
+<hr class="rounded">
+{block:Iflink1}
+
+        <a href="{text:link 1 url}"class="borderlink">{text:link 1}</a>
+    {/block:Iflink1}
+       {block:Iflink2}
+       <a href="{text:link 2 url}"class="borderlink">{text:link 2}</a>
+       {/block:Iflink2}
+      
+      {block:Iflink3}
+       <a href="{text:link 3 url}"class="borderlink">{text:link 3}</a>
+       {/block:Iflink3}
+       
+       {block:Iflink4}
+       <a href="{text:link 4 url}"class="borderlink">{text:link 4}</a>
+       {/block:Iflink4}
+       
+       {block:Iflink5}
+       <a href="{text:link 5 url}"class="borderlink">{text:link 5}</a>
+       {/block:Iflink5}
+       
+       {block:Iflink6}
+       <a href="{text:link 6 url}"class="borderlink">{text:link 6}</a>
+       {/block:Iflink6}
+       
+       {block:Iflink7}
+       <a href="{text:link 7 url}"class="borderlink">{text:link 7}</a>
+       {/block:Iflink7}
+       
+       {block:Iflink8}
+       <a href="{text:link 8 url}"class="borderlink">{text:link 8}</a>
+       {/block:Iflink8}
+       
+       {block:Iflink9}
+       <a href="{text:link 9 url}"class="borderlink">{text:link 9}</a>
+       {/block:Iflink9}
+       
+       {block:Iflink10}
+       <a href="{text:link 10 url}"class="borderlink">{text:link 10}</a>
+       {/block:Iflink10} 
+        
+        {block:Iflink11}
+       <a href="{text:link 11 url}"class="borderlink">{text:link 11}</a>
+       {/block:Iflink11} 
+       
+       {block:Iflink12}
+       <a href="{text:link 12 url}"class="borderlink">{text:link 12}</a>
+       {/block:Iflink12} 
+       
+       {block:Iflink13}
+       <a href="{text:link 13 url}"class="borderlink">{text:link 13}</a>
+       {/block:Iflink13} 
+       
+       {block:Iflink14}
+       <a href="{text:link 14 url}"class="borderlink">{text:link 14}</a>
+       {/block:Iflink14} 
+       
+       {block:Iflink15}
+       <a href="{text:link 15 url}"class="borderlink">{text:link 15}</a>
+       {/block:Iflink15} 
+       
+       {block:Iflink16}
+       <a href="{text:link 16 url}"class="borderlink">{text:link 16}</a>
+       {/block:Iflink16} 
+       
+       {block:Iflink17}
+       <a href="{text:link 17 url}"class="borderlink">{text:link 17}</a>
+       {/block:Iflink17} 
+       
+       {block:Iflink18}
+       <a href="{text:link 18 url}"class="borderlink">{text:link 18}</a>
+       {/block:Iflink18} 
+       
+       {block:Iflink19}
+       <a href="{text:link 19 url}"class="borderlink">{text:link 19}</a>
+       {/block:Iflink19} 
+       
+       {block:Iflink20}
+       <a href="{text:link 20 url}"class="borderlink">{text:link 20}</a>
+       {/block:Iflink20} 
+       
+       
+        
+        
+                
+              
+    {/block:Ifshowcustomlinks2} {/block:Iflinksbeforedescription}
+                         <!-- end of link codes-->  
+                    {/block:Ifnotlinksbeforedescription}
                     
                     
   {/block:Ifshowsidebar}  

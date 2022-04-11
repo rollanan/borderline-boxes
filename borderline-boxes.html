@@ -17,6 +17,7 @@
 <meta name="if:show sidebar" content=""/>
 <meta name="if:show sidebar 2" content=""/>
 <meta name="if:show twitter timeline" content=""/>
+<meta name="if:use jump pagination" content=""/>
 <meta name="text:embed your twitter timeline here" content=""/>
    <meta name="text: custom links title" content=""/>
    <meta name="text: custom links 2 title" content=""/>
@@ -2008,14 +2009,10 @@ margin: 0 auto;
                         <!-- end of posts code-->               
                                        
                                        
-                                       
-                    
-                      
-
-                       
-                       
-                       
-                        <!--these are the previous button codes-->
+                  <!--normal next buttons-->
+                    {block:Ifnotusejumppagination}    
+                  
+                     <!--these are the previous button codes-->
                         
                         
                         
@@ -2072,7 +2069,120 @@ margin: 0 auto;
                    
                    
 {/block:NextPage} 
+                  
+                  
+                  
+                  
+                       {/block:Ifnotusejumppagination}    
+                  <!--end of normal next buttons--> 
+                    
+                      
+
+                       
+                       
+                       
+                      
+                        
+                        
+                        
+                        
+                        
+  <!--start of warp-->
+  {block:Ifusejumppagination}    
+  
+                        <div  class="warpdrive"  >
+                     <!--these are the previous button codes-->
+                     {block:PreviousPage}
                    
+                   <div  class="nextdiv" >
+                        
+
+                <a class="nextlink" href="{PreviousPage}"><==</a>
+        
+
+                        
+                    </div>
+                    
+                    
+            {/block:PreviousPage}
+                   
+
+                    <!--end of previous button codes-->
+                   
+                     
+                   
+                   
+                   
+              
+                   {block:JumpPagination length="10"}{block:CurrentPage}
+                    <a href="{URL}" class="borderlink "
+                    
+                    
+                    style="
+                    
+top: -20px;
+position: relative;
+                    
+                    "
+                    
+                    
+                    
+                    >{PageNumber}</a>
+                {/block:CurrentPage}{block:JumpPage}
+                    <a style="display:block;" class="borderlink" href="{URL}">{PageNumber}</a>
+                {/block:JumpPage}{/block:JumpPagination}
+              
+                   
+                   
+                   <style>
+                       .warpdrive{
+                           
+                           
+                           margin:0 auto;
+                           text-align:center;
+                           
+                           
+                           display: flex;
+justify-content: center;
+                           
+                           word-break:keep-all;
+                           
+                       }
+                       
+                       
+                       
+                   </style>
+                   
+                   
+                   
+                   <!--these are the next button codes-->
+                  
+                    {block:NextPage}
+                  
+                    <div  class="nextdiv" >
+
+                        <style>
+
+                        </style>
+                        
+
+                <a class="nextlink" href="{NextPage}">==></a>
+           
+
+  
+
+                    </div>
+                   
+                   
+                   
+{/block:NextPage} 
+                        </div>
+                        
+                      {/block:Ifusejumppagination}    
+                           <!--end of warp-->
+                        
+                        
+                        
          <style>
       
 
@@ -2132,7 +2242,8 @@ text-decoration: none;
                    
    
    
-   
+    
+                        
    
    
    

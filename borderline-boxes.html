@@ -2113,15 +2113,19 @@ margin: 0 auto;
                    
                    
                    
-              
-                   {block:JumpPagination length="10"}{block:CurrentPage}
-                    <a href="{URL}" class="borderlink "
+             
+{block:JumpPagination length="15"}
+
+
+{block:CurrentPage}
+                    <a href="{URL}" class="borderlink , warper "
                     
                     
                     style="
                     
-top: -20px;
-position: relative;
+
+display: inline-block;
+
                     
                     "
                     
@@ -2129,7 +2133,7 @@ position: relative;
                     
                     >{PageNumber}</a>
                 {/block:CurrentPage}{block:JumpPage}
-                    <a style="display:block;" class="borderlink" href="{URL}">{PageNumber}</a>
+                    <a style="display: inline-block;" class="borderlink" href="{URL}">{PageNumber}</a>
                 {/block:JumpPage}{/block:JumpPagination}
               
                    
@@ -2142,13 +2146,23 @@ position: relative;
                            text-align:center;
                            
                            
-                           display: flex;
+                  
 justify-content: center;
                            
                            word-break:keep-all;
+                            flex-wrap: wrap:
+                       }
+                       
+                       .warper{
+                           
+                           color:white;
+
+background:{AccentColor};
                            
                        }
                        
+                       
+        
                        
                        
                    </style>

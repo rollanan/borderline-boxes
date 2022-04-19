@@ -1351,7 +1351,9 @@ text-decoration: none;
       <!--upper jump pagination-->
 {block:Ifshowuppernavigation} 
        <!--normal next buttons-->
-                    <hr class="rounded"> 
+                    {block:Pagination}
+                    <hr class="rounded">
+                    {/block:Pagination}
                     {block:Ifnotusejumppagination}    
                   
                      <!--these are the previous button codes-->
